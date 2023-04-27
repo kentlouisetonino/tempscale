@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
 #define GREEN "\033[32m"  // * green
 #define CYAN "\033[36m"   // * cyan
@@ -10,6 +9,7 @@
 // * defines the function name, return types, and parameters
 void instruction(void);
 int userChoice();
+int isOneOfTheChoices(int);
 
 int main() {
   int choice;
@@ -27,10 +27,21 @@ int main() {
   // * instructions
   instruction();
   
-  // * choice
+  // * choices
   choice = userChoice();
 
-  printf("\ntest: %d", choice);
+  // * validate
+  if (choice == 0) {
+    printf(RED);
+    printf(" -----------------------------------------------------------    \n");
+    printf("|                                                           |   \n");
+    printf("|         YOUR INPUT IS INVALID. PLEASE TRY AGAIN.          |   \n");
+    printf("|___________________________________________________________|   \n");
+    printf(RED RESET);
+
+    choice = userChoice();
+    printf("%d", choice);
+  }
   
   return 0;
 }
@@ -48,6 +59,7 @@ void instruction() {
 
 int userChoice() {
   int choice;
+  int isValidChoice;
 
   printf("\n");
   printf(CYAN);
@@ -56,6 +68,20 @@ int userChoice() {
   scanf("%d", &choice);
   printf("\n");
 
-  return choice;
+  isValidChoice = isOneOfTheChoices(choice);
+
+
+  return isValidChoice;
+}
+
+int isOneOfTheChoices(int choice) {
+  int lowestChoice = 1;
+  int highestChoice = 6;
+    
+  if (lowestChoice <= choice && choice <= highestChoice) {
+    return 1;
+  } else {
+    return 0;
+  }
 }
 
