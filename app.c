@@ -30,7 +30,7 @@ int main() {
   printf("Your choice (1 | 2 | 3 | 4 | 5 | 6): ");
   scanf("%d", &choice);
   printf("\n");
-
+  
   return 0;
 }
 
