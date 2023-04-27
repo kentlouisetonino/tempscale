@@ -1,5 +1,6 @@
 #include <stdio.h>
 #define GREEN "\033[32m"  // * green
+#define CYAN "\033[36m"    // * cyan
 #define RESET "\033[0m"   // * default
 
 int main() {
@@ -27,7 +28,9 @@ int main() {
   
   // * choice
   printf("\n");
+  printf(CYAN);
   printf("Your choice (1 | 2 | 3 | 4 | 5 | 6): ");
+  printf(CYAN RESET);
   scanf("%d", &choice);
   printf("\n");
   
