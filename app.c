@@ -32,6 +32,7 @@ int main() {
 
   // * validate
   if (choice == 0) {
+    system("clear");
     printf(RED);
     printf(" -----------------------------------------------------------    \n");
     printf("|                                                           |   \n");
