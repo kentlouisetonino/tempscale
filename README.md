@@ -1,2 +1,2 @@
-# temter
-A CLI temperature converter application.
+## Description
+> - A CLI temperature converter application.
