@@ -29,21 +29,25 @@ int main() {
   
   // * choices
   choice = userChoice();
+  fflush(stdin);
 
   // * validate
   if (choice == 0) {
-    system("clear");
-    printf(RED);
-    printf(" -----------------------------------------------------------    \n");
-    printf("|                                                           |   \n");
-    printf("|         YOUR INPUT IS INVALID. PLEASE TRY AGAIN.          |   \n");
-    printf("|___________________________________________________________|   \n");
-    printf(RED RESET);
+    do {
+      system("clear");
+      printf(RED);
+      printf(" -----------------------------------------------------------    \n");
+      printf("|                                                           |   \n");
+      printf("|         YOUR INPUT IS INVALID. PLEASE TRY AGAIN.          |   \n");
+      printf("|___________________________________________________________|   \n");
+      printf(RED RESET);
 
-    choice = userChoice();
-    printf("%d", choice);
+      choice = userChoice();
+      printf("%d", choice);
+      fflush(stdin);
+    } while(choice == 0);
   }
-  
+
   return 0;
 }
 
@@ -65,8 +69,8 @@ int userChoice() {
   printf("\n");
   printf(CYAN);
   printf("Your choice (1 | 2 | 3 | 4 | 5 | 6): ");
-  printf(CYAN RESET);
   scanf("%d", &choice);
+  printf(CYAN RESET);
   printf("\n");
 
   isValidChoice = isOneOfTheChoices(choice);
