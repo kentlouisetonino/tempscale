@@ -42,7 +42,6 @@ int main() {
       printf(RED RESET);
 
       choice = userChoice();
-      printf("%d", choice);
     } while(choice == 0);
   }
 
