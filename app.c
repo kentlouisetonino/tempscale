@@ -62,11 +62,13 @@ void instruction() {
 int userChoice() {
   int choice;
   int isValidChoice;
+  char str[100];
 
   printf("\n");
   printf(CYAN);
   printf("Your choice (1 | 2 | 3 | 4 | 5 | 6): ");
-  scanf("%d", &choice);
+  scanf("%d\n", &choice);
+  fgets(str, 100, stdin);
   printf(CYAN RESET);
   printf("\n");
 
