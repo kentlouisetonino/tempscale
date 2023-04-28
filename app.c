@@ -29,7 +29,6 @@ int main() {
   
   // * choices
   choice = userChoice();
-  fflush(stdin);
 
   // * validate
   if (choice == 0) {
@@ -44,7 +43,6 @@ int main() {
 
       choice = userChoice();
       printf("%d", choice);
-      fflush(stdin);
     } while(choice == 0);
   }
 
