@@ -13,7 +13,7 @@ int userChoice();
 int isOneOfTheChoices(int);
 
 int main() {
-  /// * clear first the screen
+  // * clear first the screen
   system("clear");
 
   int choice;
