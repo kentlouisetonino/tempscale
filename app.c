@@ -58,7 +58,7 @@ int userChoice() {
 
   printf("\n");
   printf(CYAN);
-  printf("Your choice (1 | 2 | 3 | 4 | 5 | 6): ");
+  printf("Option (1 | 2 | 3 | 4 | 5 | 6): ");
   scanf("%d", &choice);
   printf(CYAN RESET);
   printf("\n");
