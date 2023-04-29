@@ -7,6 +7,7 @@
 
 // * function prototype
 // * defines the function name, return types, and parameters
+void description(void);
 void instruction(void);
 int userChoice();
 int isOneOfTheChoices(int);
@@ -18,14 +19,7 @@ int main() {
   int choice;
 
   // * application description
-  printf(GREEN);
-  printf(" ----------------------------------------------------------   \n");
-  printf("|                         TEMTER                           |  \n");
-  printf("|                                                          |  \n");
-  printf("| A simple CLI temperature converter application that will |  \n");
-  printf("| allow you to convert different unit of temperature.      |  \n");
-  printf("|__________________________________________________________|  \n");
-  printf(GREEN RESET);
+  description();
 
   // * instructions
   instruction();
@@ -33,22 +27,19 @@ int main() {
   // * choices
   choice = userChoice();
 
-  // * validate
-  if (choice == 0) {
-    do {
-      system("clear");
-      printf(RED);
-      printf(" -----------------------------------------------------------    \n");
-      printf("|                                                           |   \n");
-      printf("|         YOUR INPUT IS INVALID. PLEASE TRY AGAIN.          |   \n");
-      printf("|___________________________________________________________|   \n");
-      printf(RED RESET);
-
-      choice = userChoice();
-    } while(choice == 0);
-  }
+  printf("%d", choice);
 
   return 0;
+}
+
+void description() {
+  printf(GREEN);
+  printf(" ----------------------------------------------------------   \n");
+  printf("|                         TEMTER                           |  \n");
+  printf("| A simple CLI temperature converter application that will |  \n");
+  printf("| allow you to convert different unit of temperature.      |  \n");
+  printf("|__________________________________________________________|  \n");
+  printf(GREEN RESET);
 }
 
 void instruction() {
@@ -64,29 +55,18 @@ void instruction() {
 
 int userChoice() {
   int choice;
-  int isValidChoice;
-  char str[100];
 
   printf("\n");
   printf(CYAN);
   printf("Your choice (1 | 2 | 3 | 4 | 5 | 6): ");
-  scanf("%d\n", &choice);
-  fgets(str, 100, stdin);
+  scanf("%d", &choice);
   printf(CYAN RESET);
   printf("\n");
-
-  isValidChoice = isOneOfTheChoices(choice);
-
-
-  return isValidChoice;
-}
-
-int isOneOfTheChoices(int choice) {
-  int lowestChoice = 1;
-  int highestChoice = 6;
-    
-  if (lowestChoice <= choice && choice <= highestChoice) {
+  
+  if (choice == 1) {
     return 1;
+  } else if (choice == 2) {
+    return 2;
   } else {
     return 0;
   }
