@@ -1,7 +1,5 @@
-#include <iostream>
 #define CYAN "\033[36m"
 #define RESET "\033[0m"
-using namespace std;
 
 void conversionTitle(int choice) {
   if (choice == 1) {
