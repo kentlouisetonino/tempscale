@@ -12,6 +12,7 @@ void cleanInputBuffer(void);
 void applicationDescription(void);
 void choicesDescription(void);
 void conversionTitle(int);
+float conversionProcess(int, float);
 
 int main() {
   clearScreen();
@@ -101,35 +102,45 @@ void conversionTitle(int choice) {
     cout << "|             Celsius (C) -> Fahrenheit (F)              |" << endl;
     cout << "|________________________________________________________|" << endl;
     cout << CYAN RESET;
-  } else if (choice == 2) {
+  }
+
+  if (choice == 2) {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
     cout << "|             Celsius (C) -> Kelvin (K)                  |" << endl;
     cout << "|________________________________________________________|" << endl;
     cout << CYAN RESET;
-  } else if (choice == 3) {
+  }
+
+  if (choice == 3) {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
     cout << "|             Fahrenheit (F) -> Celsius (C)              |" << endl;
     cout << "|________________________________________________________|" << endl;
     cout << CYAN RESET;
-  } else if (choice == 4) {
+  } 
+
+  if (choice == 4) {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
     cout << "|             Fahrenheit (F) -> Kelvin (K)               |" << endl;
     cout << "|________________________________________________________|" << endl;
     cout << CYAN RESET;
-  } else if (choice == 5) {
+  }
+
+  if (choice == 5) {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
     cout << "|             Kelvin (K) -> Celsius (C)                  |" << endl;
     cout << "|________________________________________________________|" << endl;
     cout << CYAN RESET;
-  } else {
+  }
+
+  if (choice == 6) {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
@@ -137,4 +148,40 @@ void conversionTitle(int choice) {
     cout << "|________________________________________________________|" << endl;
     cout << CYAN RESET;
   }
+}
+
+float conversionProcess(int choice, float conversionInput) {
+  float result = 0;
+  
+  // * celsius -> fahrenheit
+  if (choice == 1) {
+    result = ((9.0 * conversionInput) / 5) + 32;
+  }
+  
+  // * celsius -> kelvin
+  if (choice == 2) {
+    result = conversionInput + 273.15;
+  }
+  
+  // * fahrenheit -> celsius
+  if (choice == 3) {
+    result = ((5.0 * conversionInput) - (5.0 * 32.0)) / 9.0;
+  }
+  
+  // * fahrenheit -> kelvin
+  if (choice == 4) {
+    result = (((conversionInput * 5.0) - (32 * 5)) / 9.0) + 273.15;
+  }
+  
+  // * kelvin -> celsius
+  if (choice == 5) {
+    result = conversionInput - 273.15;
+  }
+  
+  // * kelvin -> fahrenheit
+  if (choice == 6) {
+    result = ((conversionInput * 9.0) - (273.15 * 9) / 5) + 32;
+  }
+
+  return result;
 }
