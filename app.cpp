@@ -1,15 +1,15 @@
 #include <iostream>
 #include "headers/clearScreen.h"
 #include "headers/cleanInputBuffer.h"
+#include "headers/applicationDescription.h"
 #define GREEN "\033[32m"
 #define CYAN "\033[36m"
 #define RED "\033[31m"
 #define YELLOW "\033[31m"
-#define RESET "\033[0m"   // * default
+#define RESET "\033[0m"
 using namespace std;
 
 // * function prototype
-void applicationDescription(void);
 void choicesDescription(void);
 void conversionTitle(int);
 float conversionProcess(int, float);
@@ -91,16 +91,6 @@ int main() {
   } while (!validOption);
 
   return 0;
-}
-
-void applicationDescription() {
-  cout << GREEN;
-  cout << " ---------------------------------------------------------- " << endl;
-  cout << "|                         TEMTER                           |" << endl;
-  cout << "| A simple CLI temperature converter application that will |" << endl;
-  cout << "| allow you to convert different unit of temperature.      |" << endl;
-  cout << "|__________________________________________________________|" << endl;
-  cout << GREEN RESET << endl;
 }
 
 void choicesDescription() {
