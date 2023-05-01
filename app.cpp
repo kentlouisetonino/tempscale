@@ -11,17 +11,17 @@ void clearScreen(void);
 void cleanInputBuffer(void);
 void applicationDescription(void);
 void choicesDescription(void);
+void conversionTitle(int);
 
 int main() {
   clearScreen();
 
   int choice;
-  int conversionInput;
-  int conversionOutput;
+  float conversionInput;
+  float conversionOutput;
   bool validOption = true;
 
   do {
-    // * descriptions
     applicationDescription();
     choicesDescription();
     cout << endl;
@@ -38,13 +38,26 @@ int main() {
     cin >> choice;
 
     if (cin.fail()) {
-      clearScreen();
       validOption = false;
-      cleanInputBuffer();
     } else {
-      validOption = true;
-      cleanInputBuffer();
+      cout << choice;
+
+      if (
+        choice == 1 ||
+        choice == 2 ||
+        choice == 3 ||
+        choice == 4 ||
+        choice == 5 ||
+        choice  == 6
+      ) {
+        validOption = true;
+      } else {
+        validOption = false;
+      }
     }
+
+    clearScreen();
+    cleanInputBuffer();
   } while (!validOption);
 
   return 0;
@@ -80,3 +93,48 @@ void choicesDescription() {
   cout << CYAN RESET << endl;
 }
 
+void conversionTitle(int choice) {
+  if (choice == 1) {
+    cout << CYAN;
+    cout << " -------------------------------------------------------- " << endl;
+    cout << "|                                                        |" << endl;
+    cout << "|             Celsius (C) -> Fahrenheit (F)              |" << endl;
+    cout << "|________________________________________________________|" << endl;
+    cout << CYAN RESET;
+  } else if (choice == 2) {
+    cout << CYAN;
+    cout << " -------------------------------------------------------- " << endl;
+    cout << "|                                                        |" << endl;
+    cout << "|             Celsius (C) -> Kelvin (K)                  |" << endl;
+    cout << "|________________________________________________________|" << endl;
+    cout << CYAN RESET;
+  } else if (choice == 3) {
+    cout << CYAN;
+    cout << " -------------------------------------------------------- " << endl;
+    cout << "|                                                        |" << endl;
+    cout << "|             Fahrenheit (F) -> Celsius (C)              |" << endl;
+    cout << "|________________________________________________________|" << endl;
+    cout << CYAN RESET;
+  } else if (choice == 4) {
+    cout << CYAN;
+    cout << " -------------------------------------------------------- " << endl;
+    cout << "|                                                        |" << endl;
+    cout << "|             Fahrenheit (F) -> Kelvin (K)               |" << endl;
+    cout << "|________________________________________________________|" << endl;
+    cout << CYAN RESET;
+  } else if (choice == 5) {
+    cout << CYAN;
+    cout << " -------------------------------------------------------- " << endl;
+    cout << "|                                                        |" << endl;
+    cout << "|             Kelvin (K) -> Celsius (C)                  |" << endl;
+    cout << "|________________________________________________________|" << endl;
+    cout << CYAN RESET;
+  } else {
+    cout << CYAN;
+    cout << " -------------------------------------------------------- " << endl;
+    cout << "|                                                        |" << endl;
+    cout << "|             Kelvin (F) -> Fahrenheit (F)               |" << endl;
+    cout << "|________________________________________________________|" << endl;
+    cout << CYAN RESET;
+  }
+}
