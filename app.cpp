@@ -1,8 +1,9 @@
 #include <iostream>
 #include <limits>
-#define GREEN "\033[32m"  // * green
-#define CYAN "\033[36m"   // * cyan
-#define RED "\033[31m"    // * RED
+#define GREEN "\033[32m"
+#define CYAN "\033[36m"
+#define RED "\033[31m"
+#define YELLOW "\033[31m"
 #define RESET "\033[0m"   // * default
 using namespace std;
 
@@ -57,6 +58,35 @@ int main() {
       }
     }
 
+    clearScreen();
+    cleanInputBuffer();
+  } while (!validOption);
+
+  do {
+    cout << endl;
+    conversionTitle(choice);
+    cout << endl << endl;
+
+    if (!validOption) {
+      cout << RED;
+      cout << "Input is not valid. Please try again.";
+      cout << endl << endl;
+      cout << RED RESET;
+    }
+
+    cout << "Please input the value to convert: ";
+    cin >> conversionInput;
+    
+    if (cin.fail()) {
+      validOption = false;
+    } else {
+      conversionOutput = conversionProcess(choice, conversionInput);
+      validOption = true;
+    }
+
+    cout << conversionInput;
+    cout << endl;
+  
     clearScreen();
     cleanInputBuffer();
   } while (!validOption);
