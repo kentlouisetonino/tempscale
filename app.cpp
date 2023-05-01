@@ -1,5 +1,6 @@
 #include <iostream>
 #include <limits>
+#include "libs/clearScreen.h"
 #define GREEN "\033[32m"
 #define CYAN "\033[36m"
 #define RED "\033[31m"
@@ -8,7 +9,7 @@
 using namespace std;
 
 // * function prototype
-void clearScreen(void);
+void clearScreen();
 void cleanInputBuffer(void);
 void applicationDescription(void);
 void choicesDescription(void);
@@ -92,10 +93,6 @@ int main() {
   } while (!validOption);
 
   return 0;
-}
-
-void clearScreen() {
-  cout << "\033c";
 }
 
 void cleanInputBuffer() {
