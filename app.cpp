@@ -4,6 +4,7 @@
 #include "headers/applicationDescription.h"
 #include "headers/choicesDescription.h"
 #include "headers/conversionTitle.h"
+#include "headers/conversionCalculation.h"
 #define GREEN "\033[32m"
 #define CYAN "\033[36m"
 #define RED "\033[31m"
@@ -11,14 +12,12 @@
 #define RESET "\033[0m"
 using namespace std;
 
-float conversionProcess(int, float);
-
 int main() {
   clearScreen();
 
   int choice;
-  float conversionInput;
-  float conversionOutput;
+  float input;
+  float output;
   bool validOption = true;
 
   do {
@@ -73,17 +72,14 @@ int main() {
     }
 
     cout << "Please input the value to convert: ";
-    cin >> conversionInput;
+    cin >> input;
     
     if (cin.fail()) {
       validOption = false;
     } else {
-      conversionOutput = conversionProcess(choice, conversionInput);
+      output = conversionCalculation(choice, input);
       validOption = true;
     }
-
-    cout << conversionInput;
-    cout << endl;
   
     clearScreen();
     cleanInputBuffer();
@@ -92,38 +88,3 @@ int main() {
   return 0;
 }
 
-float conversionProcess(int choice, float conversionInput) {
-  float result = 0;
-  
-  // * celsius -> fahrenheit
-  if (choice == 1) {
-    result = ((9.0 * conversionInput) / 5) + 32;
-  }
-  
-  // * celsius -> kelvin
-  if (choice == 2) {
-    result = conversionInput + 273.15;
-  }
-  
-  // * fahrenheit -> celsius
-  if (choice == 3) {
-    result = ((5.0 * conversionInput) - (5.0 * 32.0)) / 9.0;
-  }
-  
-  // * fahrenheit -> kelvin
-  if (choice == 4) {
-    result = (((conversionInput * 5.0) - (32 * 5)) / 9.0) + 273.15;
-  }
-  
-  // * kelvin -> celsius
-  if (choice == 5) {
-    result = conversionInput - 273.15;
-  }
-  
-  // * kelvin -> fahrenheit
-  if (choice == 6) {
-    result = ((conversionInput * 9.0) - (273.15 * 9) / 5) + 32;
-  }
-
-  return result;
-}
