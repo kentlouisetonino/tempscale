@@ -1,6 +1,3 @@
-#define RED "\033[31m"
-#define RESET "\033[0m"
-
 int optionSelectionPrompt() {
   int choice;
   bool validOption = true;
@@ -14,7 +11,7 @@ int optionSelectionPrompt() {
       cout << RED;
       cout << "Input is not valid. Please try again." << endl;
       cout << endl;
-      cout << RED RESET;
+      cout << RED << RESET;
     }
   
     // * inputs

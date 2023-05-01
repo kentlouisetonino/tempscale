@@ -1,6 +1,3 @@
-#define CYAN "\033[36m"
-#define RESET "\033[0m"
-
 void conversionTitle(int choice) {
   if (choice == 1) {
     cout << CYAN;
@@ -8,7 +5,7 @@ void conversionTitle(int choice) {
     cout << "|                                                        |" << endl;
     cout << "|             Celsius (C) -> Fahrenheit (F)              |" << endl;
     cout << "|________________________________________________________|" << endl;
-    cout << CYAN RESET;
+    cout << CYAN << RESET;
   }
 
   if (choice == 2) {
@@ -17,7 +14,7 @@ void conversionTitle(int choice) {
     cout << "|                                                        |" << endl;
     cout << "|             Celsius (C) -> Kelvin (K)                  |" << endl;
     cout << "|________________________________________________________|" << endl;
-    cout << CYAN RESET;
+    cout << CYAN << RESET;
   }
 
   if (choice == 3) {
@@ -26,7 +23,7 @@ void conversionTitle(int choice) {
     cout << "|                                                        |" << endl;
     cout << "|             Fahrenheit (F) -> Celsius (C)              |" << endl;
     cout << "|________________________________________________________|" << endl;
-    cout << CYAN RESET;
+    cout << CYAN << RESET;
   } 
 
   if (choice == 4) {
@@ -35,7 +32,7 @@ void conversionTitle(int choice) {
     cout << "|                                                        |" << endl;
     cout << "|             Fahrenheit (F) -> Kelvin (K)               |" << endl;
     cout << "|________________________________________________________|" << endl;
-    cout << CYAN RESET;
+    cout << CYAN << RESET;
   }
 
   if (choice == 5) {
@@ -44,7 +41,7 @@ void conversionTitle(int choice) {
     cout << "|                                                        |" << endl;
     cout << "|             Kelvin (K) -> Celsius (C)                  |" << endl;
     cout << "|________________________________________________________|" << endl;
-    cout << CYAN RESET;
+    cout << CYAN << RESET;
   }
 
   if (choice == 6) {
@@ -53,7 +50,7 @@ void conversionTitle(int choice) {
     cout << "|                                                        |" << endl;
     cout << "|             Kelvin (F) -> Fahrenheit (F)               |" << endl;
     cout << "|________________________________________________________|" << endl;
-    cout << CYAN RESET;
+    cout << CYAN << RESET;
   }
 }
 

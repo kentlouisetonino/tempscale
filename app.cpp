@@ -6,11 +6,7 @@
 #include "headers/conversionTitle.hpp"
 #include "headers/conversionCalculation.hpp"
 #include "headers/optionSelectionPrompt.hpp"
-#define GREEN "\033[32m"
-#define CYAN "\033[36m"
-#define RED "\033[31m"
-#define YELLOW "\033[31m"
-#define RESET "\033[0m"
+#include "headers/constants.hpp"
 using namespace std;
 
 int main() {
@@ -32,7 +28,7 @@ int main() {
       cout << RED;
       cout << "Input is not valid. Please try again.";
       cout << endl << endl;
-      cout << RED RESET;
+      cout << RED << RESET;
     }
 
     cout << "Please input the value to convert: ";

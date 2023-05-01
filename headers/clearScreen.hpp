@@ -1,4 +1,5 @@
 #include <iostream>
+#include "constants.hpp"
 using namespace std;
 
 void clearScreen() {
