@@ -1,5 +1,4 @@
 #include <iostream>
-#include <limits>
 #include "headers/clearScreen.h"
 #include "headers/cleanInputBuffer.h"
 #define GREEN "\033[32m"
