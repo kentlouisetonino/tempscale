@@ -8,9 +8,7 @@ using namespace std;
 // * function prototype
 // * defines the function name, return types, and parameters
 void description(void);
-void instruction(void);
-int userChoice();
-int isOneOfTheChoices(int);
+void choicesDescription(void);
 
 int main() {
   // * clear first the screen
@@ -19,12 +17,13 @@ int main() {
   // * application description
   description();
 
+  // * choices description
+  choicesDescription();
+
   return 0;
 }
 
 void description() {
-  int proceed;
-
   cout << GREEN;
   cout << " ---------------------------------------------------------- " << endl;
   cout << "|                         TEMTER                           |" << endl;
@@ -32,5 +31,16 @@ void description() {
   cout << "| allow you to convert different unit of temperature.      |" << endl;
   cout << "|__________________________________________________________|" << endl;
   cout << GREEN RESET << endl;
+}
+
+void choicesDescription() {
+  cout << CYAN;
+  cout << "[1] Celsius to Fahrenheit" << endl;
+  cout << "[2] Celsius to Kelvin" << endl;
+  cout << "[3] Fahrenheit to Celsius" << endl;
+  cout << "[4] Fahrenheit to Kelvin" << endl;
+  cout << "[5] Kelvin to Celsius" << endl;
+  cout << "[6] Kelvin to Fahrenheit" << endl;
+  cout << CYAN RESET << endl;
 }
 
