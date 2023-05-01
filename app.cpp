@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 #define GREEN "\033[32m"  // * green
 #define CYAN "\033[36m"   // * cyan
 #define RED "\033[31m"    // * RED
@@ -6,24 +7,40 @@
 using namespace std;
 
 // * function prototype
-// * defines the function name, return types, and parameters
-void description(void);
+void clearScreen(void);
+void applicationDescription(void);
 void choicesDescription(void);
 
 int main() {
-  // * clear first the screen
-  cout << "\033c";
+  clearScreen();
 
-  // * application description
-  description();
+  int choice;
+  int conversionInput;
+  int conversionOutput;
 
-  // * choices description
+  // * descriptions
+  applicationDescription();
   choicesDescription();
+  cout << endl;
+
+  // * inputs
+  cout << "Option (1 | 2 | 3 | 4 | 5 | 6): ";
+  cin >> choice;
+
+  if (cin.fail()) {
+    cout << "Something is wrong";
+    cin.clear();
+    cin.ignore(10000, '\n');
+  }
 
   return 0;
 }
 
-void description() {
+void clearScreen() {
+  cout << "\033c";
+}
+
+void applicationDescription() {
   cout << GREEN;
   cout << " ---------------------------------------------------------- " << endl;
   cout << "|                         TEMTER                           |" << endl;
