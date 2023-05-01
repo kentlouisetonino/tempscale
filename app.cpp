@@ -1,6 +1,7 @@
 #include <iostream>
 #include <limits>
-#include "libs/clearScreen.h"
+#include "headers/clearScreen.h"
+#include "headers/cleanInputBuffer.h"
 #define GREEN "\033[32m"
 #define CYAN "\033[36m"
 #define RED "\033[31m"
@@ -9,8 +10,6 @@
 using namespace std;
 
 // * function prototype
-void clearScreen();
-void cleanInputBuffer(void);
 void applicationDescription(void);
 void choicesDescription(void);
 void conversionTitle(int);
@@ -93,11 +92,6 @@ int main() {
   } while (!validOption);
 
   return 0;
-}
-
-void cleanInputBuffer() {
-  cin.clear();
-  cin.ignore(10000, '\n');
 }
 
 void applicationDescription() {
