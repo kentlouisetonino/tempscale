@@ -1,5 +1,5 @@
-## Description (In Progress)
-> - A CLI temperature converter application.
+## Description
+> - A CLI temperature converter application. Currently in progress.
 
 <br />
 <br />
