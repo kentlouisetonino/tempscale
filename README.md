@@ -5,9 +5,10 @@
 <br />
 
 ## Flow Diagram
-> Phase #1: Here, the program will prompt to access the user preferred option.
+> Here in phase #1, the program will prompt to access the user preferred option.
 
-![phase-1](https://user-images.githubusercontent.com/69438999/236446682-241979a8-49ba-41c2-9cc0-271962675d1b.png)
+![phase-1](https://user-images.githubusercontent.com/69438999/236447428-efe945cd-8df5-4467-9307-24e39c746763.png)
+
 
 
 <br />
