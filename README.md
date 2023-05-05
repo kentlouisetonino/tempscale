@@ -6,7 +6,7 @@
 
 
 
-## Flow Diagram
+## System Flow
 > Below are the equivalent conversion formula of the option preferred by the user.
 
 ![1](https://user-images.githubusercontent.com/69438999/236451857-945682e8-0a17-4208-a201-c6f91d95ce75.png)
