@@ -24,16 +24,16 @@ int main()
   {
     cout << endl;
     conversionTitle(choice);
-    cout << endl
-         << endl;
+    cout << endl;
+    cout << endl;
 
     if (!validOption)
     {
       cout << RED;
       cout << "Input is not valid. Please try again.";
       cout << RED << RESET;
-      cout << endl
-           << endl;
+      cout << endl;
+      cout << endl;
     }
 
     cout << "Please input the value to convert: ";
