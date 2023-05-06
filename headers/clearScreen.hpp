@@ -2,7 +2,7 @@
 #include "constants.hpp"
 using namespace std;
 
-void clearScreen() {
+void clearScreen()
+{
   cout << "\033c";
 }
-

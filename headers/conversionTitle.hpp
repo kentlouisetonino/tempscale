@@ -1,5 +1,7 @@
-void conversionTitle(int choice) {
-  if (choice == 1) {
+void conversionTitle(int choice)
+{
+  if (choice == 1)
+  {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
@@ -8,7 +10,8 @@ void conversionTitle(int choice) {
     cout << CYAN << RESET;
   }
 
-  if (choice == 2) {
+  if (choice == 2)
+  {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
@@ -17,16 +20,18 @@ void conversionTitle(int choice) {
     cout << CYAN << RESET;
   }
 
-  if (choice == 3) {
+  if (choice == 3)
+  {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
     cout << "|             Fahrenheit (F) -> Celsius (C)              |" << endl;
     cout << "|________________________________________________________|" << endl;
     cout << CYAN << RESET;
-  } 
+  }
 
-  if (choice == 4) {
+  if (choice == 4)
+  {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
@@ -35,7 +40,8 @@ void conversionTitle(int choice) {
     cout << CYAN << RESET;
   }
 
-  if (choice == 5) {
+  if (choice == 5)
+  {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
@@ -44,7 +50,8 @@ void conversionTitle(int choice) {
     cout << CYAN << RESET;
   }
 
-  if (choice == 6) {
+  if (choice == 6)
+  {
     cout << CYAN;
     cout << " -------------------------------------------------------- " << endl;
     cout << "|                                                        |" << endl;
@@ -53,4 +60,3 @@ void conversionTitle(int choice) {
     cout << CYAN << RESET;
   }
 }
-

@@ -1,38 +1,46 @@
-int optionSelectionPrompt() {
+int optionSelectionPrompt()
+{
   int choice;
   bool validOption = true;
 
-  do {
+  do
+  {
     applicationDescription();
     choicesDescription();
     cout << endl;
-    
-    if (!validOption) {
+
+    if (!validOption)
+    {
       cout << RED;
       cout << "Input is not valid. Please try again." << endl;
       cout << endl;
       cout << RED << RESET;
     }
-  
+
     // * inputs
     cout << "Option (1 | 2 | 3 | 4 | 5 | 6): ";
     cin >> choice;
 
-    if (cin.fail()) {
+    if (cin.fail())
+    {
       validOption = false;
-    } else {
+    }
+    else
+    {
       cout << choice;
 
       if (
-        choice == 1 ||
-        choice == 2 ||
-        choice == 3 ||
-        choice == 4 ||
-        choice == 5 ||
-        choice  == 6
-      ) {
+          choice == 1 ||
+          choice == 2 ||
+          choice == 3 ||
+          choice == 4 ||
+          choice == 5 ||
+          choice == 6)
+      {
         validOption = true;
-      } else {
+      }
+      else
+      {
         validOption = false;
       }
     }
@@ -43,4 +51,3 @@ int optionSelectionPrompt() {
 
   return choice;
 }
-

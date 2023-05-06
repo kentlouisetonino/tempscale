@@ -9,7 +9,8 @@
 #include "headers/constants.hpp"
 using namespace std;
 
-int main() {
+int main()
+{
   clearScreen();
 
   int choice;
@@ -19,32 +20,38 @@ int main() {
 
   choice = optionSelectionPrompt();
 
-  do {
+  do
+  {
     cout << endl;
     conversionTitle(choice);
-    cout << endl << endl;
+    cout << endl
+         << endl;
 
-    if (!validOption) {
+    if (!validOption)
+    {
       cout << RED;
       cout << "Input is not valid. Please try again.";
-      cout << endl << endl;
+      cout << endl
+           << endl;
       cout << RED << RESET;
     }
 
     cout << "Please input the value to convert: ";
     cin >> input;
-    
-    if (cin.fail()) {
+
+    if (cin.fail())
+    {
       validOption = false;
-    } else {
+    }
+    else
+    {
       output = conversionCalculation(choice, input);
       validOption = true;
     }
-  
+
     clearScreen();
     cleanInputBuffer();
   } while (!validOption);
 
   return 0;
 }
-

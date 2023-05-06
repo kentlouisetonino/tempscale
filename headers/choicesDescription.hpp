@@ -1,4 +1,5 @@
-void choicesDescription() {
+void choicesDescription()
+{
   cout << CYAN;
   cout << "[1] Celsius to Fahrenheit" << endl;
   cout << "[2] Celsius to Kelvin" << endl;
@@ -8,4 +9,3 @@ void choicesDescription() {
   cout << "[6] Kelvin to Fahrenheit" << endl;
   cout << CYAN << RESET << endl;
 }
-

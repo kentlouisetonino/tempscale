@@ -1,4 +1,5 @@
-void applicationDescription() {
+void applicationDescription()
+{
   cout << GREEN;
   cout << " ---------------------------------------------------------- " << endl;
   cout << "|                         TEMTER                           |" << endl;
@@ -7,4 +8,3 @@ void applicationDescription() {
   cout << "|__________________________________________________________|" << endl;
   cout << GREEN << RESET << endl;
 }
-
