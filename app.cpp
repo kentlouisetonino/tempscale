@@ -31,9 +31,9 @@ int main()
     {
       cout << RED;
       cout << "Input is not valid. Please try again.";
+      cout << RED << RESET;
       cout << endl
            << endl;
-      cout << RED << RESET;
     }
 
     cout << "Please input the value to convert: ";
