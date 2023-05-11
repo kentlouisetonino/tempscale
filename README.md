@@ -1,6 +1,6 @@
 # Description
 
-> A CLI temperature converter application. Currently in progress.
+> A CLI temperature converter application.
 
 <br />
 <br />
