@@ -1,3 +1,3 @@
-### [ `Description` ]
-> - A CLI temperature converter.
+### Description
+> - A CLI tool for converting temperature scale.
 
