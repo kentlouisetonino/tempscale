@@ -7,6 +7,8 @@
 
 
 ### Local Development
+> - Note the root `main.go` is a symbolic link.
+
 > - Run the following commands.
 
 ```bash
