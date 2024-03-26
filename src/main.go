@@ -7,10 +7,11 @@ import (
 )
 
 func main() {
-	displays.DisplayNewline()
-	fmt.Println("\t--------------------------------------------------")
-	displays.DisplayNewline()
-	fmt.Println("                          TempScale                 ")
-	displays.DisplayNewline()
-	fmt.Println("\t--------------------------------------------------")
+	displays.AddNewline()
+	fmt.Println(displays.Tab, "--------------------------------------------------")
+	displays.AddNewline()
+	fmt.Println("                             TempScale                 ")
+	displays.AddNewline()
+	fmt.Println(displays.Tab, "--------------------------------------------------")
+	displays.AddNewline()
 }
