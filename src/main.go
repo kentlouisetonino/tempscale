@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/kentlouisetonino/tempscale/src/displays"
+)
 
 func main() {
-	fmt.Println("In Progress Project!")
+	displays.DisplayNewline()
+	fmt.Println("\t--------------------------------------------------")
+	displays.DisplayNewline()
+	fmt.Println("                          TempScale                 ")
+	displays.DisplayNewline()
+	fmt.Println("\t--------------------------------------------------")
 }
