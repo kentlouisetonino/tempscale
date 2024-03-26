@@ -7,13 +7,14 @@ import (
 )
 
 func main() {
+	displays.ClearScreen()
 	displays.AddNewline()
-	fmt.Println(displays.Tab, "--------------------------------------------------")
+	fmt.Println("\t", displays.ColorBlue, "---------------------------------------------------------", displays.ColorReset)
 	displays.AddNewline()
-	fmt.Println("                             TempScale                 ")
+	fmt.Println("\t\t\t\t", displays.ColorGreen, "TempScale", displays.ColorReset)
 	displays.AddNewline()
-	fmt.Println(displays.Tab, "   A CLI tool for converting temperature scale.   ")
+	fmt.Println("\t\t", "A CLI tool for converting temperature scale.")
 	displays.AddNewline()
-	fmt.Println(displays.Tab, "--------------------------------------------------")
+	fmt.Println("\t", displays.ColorBlue, "---------------------------------------------------------", displays.ColorReset)
 	displays.AddNewline()
 }
