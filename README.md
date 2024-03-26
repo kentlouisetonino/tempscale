@@ -1,4 +1,5 @@
 ### Description
+#
 > - A CLI tool for converting temperature scale.
 
 <br />
@@ -7,6 +8,7 @@
 
 
 ### Local Development
+#
 > - Note the root `main.go` is a symbolic link.
 
 > - Run the following commands.
