@@ -8,6 +8,7 @@ func main() {
 	// Clear the terminal first.
 	displays.ClearScreen()
 	displays.AddNewline()
+	displays.AddNewline()
 
 	// Display the application description.
 	displays.AppDescription()
@@ -19,4 +20,7 @@ func main() {
 
 	// Choose a temperature scale to convert.
 	displays.AppMainOption()
+	displays.AddNewline()
+	displays.AddNewline()
+	displays.AddNewline()
 }
