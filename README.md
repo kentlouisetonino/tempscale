@@ -1,5 +1,12 @@
 ### Description
 #
+
+<br />
+
+![Screenshot from 2024-03-27 16-07-15](https://github.com/kentlouisetonino/tempscale/assets/69438999/e5624348-4da6-41e9-b9d8-aa5f42cfd73c)
+
+<br />
+
 > - A CLI tool for converting temperature scale.
 
 > - This supports `Celsius` °C, `Fahrenheit` °F, `Kelvin` °K, and `Rankine` °R scales.
