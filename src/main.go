@@ -16,4 +16,7 @@ func main() {
 	// Display the options.
 	displays.AppOptions()
 	displays.AddNewline()
+
+	// Choose a temperature scale to convert.
+	displays.AppMainOption()
 }
