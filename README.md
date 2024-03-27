@@ -2,6 +2,8 @@
 #
 > - A CLI tool for converting temperature scale.
 
+> - This supports Celsius (C), Fahrenheit (F), Kelvin (K), and Rankine scales.
+
 <br />
 <br />
 
