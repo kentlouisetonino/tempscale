@@ -17,6 +17,7 @@
 
 
 ### System Design
+#
 
 ![tempscale-system-design](https://github.com/kentlouisetonino/tempscale/assets/69438999/07170a87-049d-4719-b2eb-d2cd65e6d70b)
 
@@ -27,6 +28,7 @@
 
 ### Local Development
 #
+
 > - Note the root `main.go` is a symbolic link.
 
 > - Run the following commands.
