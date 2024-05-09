@@ -1,8 +1,8 @@
-package celsius
+package services
 
 import "github.com/kentlouisetonino/tempscale/src/displays"
 
-func Conversion() {
+func Celsius() {
 	// Clear the screen.
 	displays.ClearScreen()
 	displays.AddNewline()
