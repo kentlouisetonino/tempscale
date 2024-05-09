@@ -2,7 +2,7 @@ package displays
 
 import "fmt"
 
-func AppMainOption() string {
+func AppMainInput() string {
 	option := ""
 
 	fmt.Print(Tab, ColorBlue, "   Choose an option number: ", ColorReset)
