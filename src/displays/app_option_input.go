@@ -2,34 +2,34 @@ package displays
 
 import "fmt"
 
-func AppMainInput() string {
-	option := ""
+func AppOptionInput() string {
+	optionInput := ""
 
 	fmt.Print(Tab, ColorBlue, "   Choose an option number: ", ColorReset)
-	fmt.Scan(&option)
+	fmt.Scan(&optionInput)
 
 	// Celsius option.
-	if option == "1" {
+	if optionInput == "1" {
 		return "1"
 	}
 
 	// Fahrenheit option.
-	if option == "2" {
+	if optionInput == "2" {
 		return "2"
 	}
 
 	// Kelvin option.
-	if option == "3" {
+	if optionInput == "3" {
 		return "3"
 	}
 
 	// Rankin option.
-	if option == "4" {
+	if optionInput == "4" {
 		return "4"
 	}
 
 	// Exit application option.
-	if option == "5" {
+	if optionInput == "5" {
 		return "5"
 	}
 

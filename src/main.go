@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	mainInput := ""
+	optionInput := ""
 	invalidInput := false
 
 	for {
@@ -21,7 +21,7 @@ func main() {
 
 		// Error instruction.
 		if invalidInput {
-			displays.AppMainInputError()
+			displays.AppOptionInputError()
 			displays.AddNewline()
 		}
 
@@ -30,17 +30,17 @@ func main() {
 		displays.AddNewline()
 
 		// Choose a temperature scale to convert.
-		mainInput = displays.AppMainInput()
+		optionInput = displays.AppOptionInput()
 		displays.AddNewline()
 		displays.AddNewline()
 		displays.AddNewline()
 
-		if mainInput == "-1" {
+		if optionInput == "-1" {
 			invalidInput = true
 			continue
 		}
 
-		if mainInput == "1" {
+		if optionInput == "1" {
 			services.Celsius()
 			break
 		}
