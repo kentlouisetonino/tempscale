@@ -42,7 +42,11 @@ func main() {
 
 		if optionInput == "1" {
 			celsius.Conversion()
-			break
+		}
+
+		if optionInput == "2" {
+			displays.ClearScreen()
+			displays.AppExit()
 		}
 	}
 }

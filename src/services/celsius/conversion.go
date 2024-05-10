@@ -52,7 +52,7 @@ func Conversion() {
 
 		if err != nil {
 			displays.ClearScreen()
-			break
+			displays.AppExit()
 		}
 
 		if conversionMenuInput == 1 {
