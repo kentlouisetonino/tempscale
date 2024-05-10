@@ -27,7 +27,7 @@ func Conversion() {
 		}
 
 		// Ask the celsius input.
-		fmt.Print(displays.Tab, "   Celsius (°C)", displays.Tab, displays.Tab, ": ")
+		fmt.Print(displays.Tab, "   ", "Celsius (°C)", displays.Tab, displays.Tab, ": ")
 		_, err := fmt.Scan(&celsiusInput)
 
 		if err != nil {
@@ -36,7 +36,12 @@ func Conversion() {
 		}
 
 		// Display the equivalent of Celsius to Fahrenheit, Kelvin, Rankine.
-		fmt.Print(displays.Tab, "   Fahrenheit (°F)", displays.Tab, ": ", convertToFahrenheit(celsiusInput));
+		fmt.Print(displays.Tab, "   ", "Fahrenheit (°F)", displays.Tab, ": ", convertToFahrenheit(celsiusInput));
+		displays.AddNewline()
+		fmt.Print(displays.Tab, "   ", "Kelvin (°K)", displays.Tab, displays.Tab, ": ", convertToKelvin(celsiusInput));
+		displays.AddNewline()
+		fmt.Print(displays.Tab, "   ", "Rankine (°R)", displays.Tab, displays.Tab, ": ", convertToRankine(celsiusInput))
+		displays.AddNewline()
 		displays.AddNewline()
 		break
 	}
