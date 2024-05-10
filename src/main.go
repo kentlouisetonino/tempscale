@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/kentlouisetonino/tempscale/src/displays"
-	"github.com/kentlouisetonino/tempscale/src/services"
+	"github.com/kentlouisetonino/tempscale/src/services/celsius"
 )
 
 func main() {
@@ -41,7 +41,7 @@ func main() {
 		}
 
 		if optionInput == "1" {
-			services.Celsius()
+			celsius.Conversion()
 			break
 		}
 	}

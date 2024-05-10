@@ -1,4 +1,4 @@
-package services
+package celsius
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"github.com/kentlouisetonino/tempscale/src/displays"
 )
 
-func Celsius() {
+func Conversion() {
 	var celsiusInput float64
 	var celsiusInputError bool = false
 
@@ -27,12 +27,17 @@ func Celsius() {
 		}
 
 		// Ask the celsius input.
-		fmt.Print(displays.Tab, "   Celsius Input (°C): ")
+		fmt.Print(displays.Tab, "   Celsius (°C)", displays.Tab, displays.Tab, ": ")
 		_, err := fmt.Scan(&celsiusInput)
 
 		if err != nil {
 			celsiusInputError = true
 			continue
 		}
+
+		// Display the equivalent of Celsius to Fahrenheit, Kelvin, Rankine.
+		fmt.Print(displays.Tab, "   Fahrenheit (°F)", displays.Tab, ": ", convertToFahrenheit(celsiusInput));
+		displays.AddNewline()
+		break
 	}
 }
