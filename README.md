@@ -33,10 +33,29 @@
 
 > - Run the following commands.
 
-```bash
+```sh
 # Change permission and make it executable.
 sudo chmod +x run.sh
 
 # Run the app.
 ./run.sh
+```
+
+<br />
+<br />
+
+
+
+### Deployment
+#
+
+```sh
+# Run the multipass.
+sudo systemctl restart snap.multipass.multipassd.service
+
+# Deploy to snap store.
+snapcraft login
+snapcraft clean
+snapcraft --debug
+snapcraft push tempscale_<version-number-in-snapcraft-yaml>_amd64.snap --release=stable
 ```
