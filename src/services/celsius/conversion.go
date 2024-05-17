@@ -38,11 +38,11 @@ func Conversion() {
 		}
 
 		// Display the equivalent of Celsius to Fahrenheit, Kelvin, Rankine.
-		fmt.Print(displays.Tab, "   ", "Fahrenheit (°F)", displays.Tab, ": ", convertToFahrenheit(celsiusInput));
+		fmt.Print(displays.Tab, "   ", "Fahrenheit (°F)", displays.Tab, ": ", displays.ColorGreen, convertToFahrenheit(celsiusInput), displays.ColorReset);
 		displays.AddNewline()
-		fmt.Print(displays.Tab, "   ", "Kelvin (°K)", displays.Tab, displays.Tab, ": ", convertToKelvin(celsiusInput));
+		fmt.Print(displays.Tab, "   ", "Kelvin (°K)", displays.Tab, displays.Tab, ": ", displays.ColorGreen, convertToKelvin(celsiusInput), displays.ColorReset);
 		displays.AddNewline()
-		fmt.Print(displays.Tab, "   ", "Rankine (°R)", displays.Tab, displays.Tab, ": ", convertToRankine(celsiusInput))
+		fmt.Print(displays.Tab, "   ", "Rankine (°R)", displays.Tab, displays.Tab, ": ", displays.ColorGreen, convertToRankine(celsiusInput), displays.ColorReset)
 		displays.AddNewline()
 		displays.AddNewline()
 
