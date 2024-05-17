@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/kentlouisetonino/tempscale/src/displays"
 	"github.com/kentlouisetonino/tempscale/src/services/celsius"
+	"github.com/kentlouisetonino/tempscale/src/services/fahrenheit"
 )
 
 func main() {
@@ -45,6 +46,10 @@ func main() {
 		}
 
 		if optionInput == "2" {
+			fahrenheit.Conversion()
+		}
+
+		if optionInput == "3" {
 			displays.ClearScreen()
 			displays.AppExit()
 		}
