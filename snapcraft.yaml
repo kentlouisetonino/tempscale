@@ -2,7 +2,7 @@ name: tempscale
 summary: CLI Tool
 description: |
   A CLI tool that converts temperature scale.
-version: "0.3.0"
+version: "1.0.0"
 grade: stable
 base: core20
 confinement: strict
