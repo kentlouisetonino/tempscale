@@ -3,7 +3,8 @@
 
 <br />
 
-![Screenshot from 2024-05-18 10-57-24](https://github.com/kentlouisetonino/tempscale/assets/69438999/01e313a2-e4bf-4819-9a8e-f1b0f1955fb9)
+![Screenshot from 2024-05-18 15-11-30](https://github.com/kentlouisetonino/tempscale/assets/69438999/531d6b51-0b1b-4e52-b4a4-0bb90b36003a)
+
 
 <br />
 
