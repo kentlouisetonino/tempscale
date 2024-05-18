@@ -5,6 +5,7 @@ import (
 	"github.com/kentlouisetonino/tempscale/src/services/celsius"
 	"github.com/kentlouisetonino/tempscale/src/services/fahrenheit"
 	"github.com/kentlouisetonino/tempscale/src/services/kelvin"
+	"github.com/kentlouisetonino/tempscale/src/services/rankine"
 )
 
 func main() {
@@ -52,6 +53,10 @@ func main() {
 
 		if optionInput == "3" {
 			kelvin.Conversion()
+		}
+
+		if optionInput == "4" {
+			rankine.Conversion()
 		}
 
 		if optionInput == "4" {
