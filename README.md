@@ -20,7 +20,7 @@
 ### System Design
 #
 
-![tempscale-system-design](https://github.com/kentlouisetonino/tempscale/assets/69438999/07170a87-049d-4719-b2eb-d2cd65e6d70b)
+![System Design](https://github.com/kentlouisetonino/tempscale/assets/69438999/1eb9642c-447c-45ee-a20c-d574250701cc)
 
 <br />
 <br />
