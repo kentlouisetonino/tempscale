@@ -13,7 +13,7 @@
 > - This supports `Celsius` °C, `Fahrenheit` °F, `Kelvin` °K, and `Rankine` °R scales.
 
 > - If you want to check how I made this project, you can <br />
-    view it [here](https://www.youtube.com/playlist?list=PLPks-uiro_XJdp-MQMQTXjPkyzqQK4jUD). Spoiler alert, it's pretty boring.
+    view it [here](https://www.youtube.com/playlist?list=PLPks-uiro_XJdp-MQMQTXjPkyzqQK4jUD). Spoiler alert: it's monotonous and boring.
 
 <br />
 <br />
