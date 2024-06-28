@@ -12,6 +12,9 @@
 
 > - This supports `Celsius` °C, `Fahrenheit` °F, `Kelvin` °K, and `Rankine` °R scales.
 
+> - If you want to check how I made this project from scratch, you can view it [here](https://www.youtube.com/playlist?list=PLPks-uiro_XJdp-MQMQTXjPkyzqQK4jUD). <br />
+    Spoiler alert, it's pretty boring.
+
 <br />
 <br />
 
